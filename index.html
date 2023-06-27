@@ -8,7 +8,7 @@
     <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -56,14 +56,10 @@
                         </div>
                         <div class="main__form-radio">
                             <h4 class="main__form-radio__title">Gender</h4>
-                            <label for="male" class="main__form-label">
-                                <input type="radio" value="Male" id="male" name="gender">
-                                Male
-                            </label>
-                            <label for="female" class="main__form-label">
-                                <input type="radio" value="Male" id="female" name="gender">
-                                Female
-                            </label>
+                            <input type="radio" value="Male" id="male" name="gender">
+                            <label for="male" class="main__form-label">Male</label>
+                            <input type="radio" value="Male" id="female" name="gender">
+                            <label for="female" class="main__form-label">Female</label>
                         </div>
                     </div>
                     <div class="main__form-box">
@@ -77,8 +73,8 @@
                         </div>
                     </div>
                     <div class="main__form-wrapper">
-                        <p>Have an account? <a href="#">Login</a></p>
-                        <button type="submit">Complete Signup</button>
+                        <p class="main__form-text">Have an account? <a class="main__form-link" href="#">Login</a></p>
+                        <button class="main__form-submit" type="submit">Complete Signup</button>
                     </div>
                 </form>
             </div>
