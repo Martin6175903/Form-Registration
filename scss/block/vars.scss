@@ -1,0 +1,24 @@
+// Container & Breakpoints
+
+@use "sass:math";
+$containerWidth: 665;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1400: 1339.98+px;
+$breakpoint992: 991.98+px;
+$breakpoint768: 767.98+px;
+$breakpoint480: 479.98+px;
+
+// Burget Menu
+$burgerBreakPoint: $breakpoint992;
+$burgerActiveColor: 'white';
+
+// Fonts
+$fontMain: 'Work Sans', sans-serif;
+$fontSizeMain: 14px;
+$lineHeightMain: 16.41px;
+
+// Text Colors
+$bg-color: #5A61ED;
+$gray-color: #7C7C7C;
+$black-color: #111111;
