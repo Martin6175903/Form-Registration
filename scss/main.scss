@@ -2,6 +2,10 @@
 @import "block/vars";
 @import "block/global";
 
+* {
+  box-sizing: border-box;
+}
+
 .main {
   margin: 60px auto 0;
   &__inner {
@@ -19,6 +23,20 @@
       bottom: 22.5px;
       right: 6.5px;
     }
+  }
+
+  &__content {
+    width: 100%;
+    padding: 39px 22px 33px 21px;
+    &-title {
+      font-size: 22px;
+      line-height: 25.78px;
+      letter-spacing: -0.46px;
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
   }
 }
 
