@@ -40,6 +40,11 @@
         line-height: 14.06px;
         color: $gray-color;
       }
+      & .form__gender {
+        font-size: $fontSizeMain;
+        line-height: $lineHeightMain;
+        color: $black-color;
+      }
       & input {
         border: none;
         border-bottom: 0.7px solid #f2f2f2;
@@ -89,10 +94,17 @@
     &-radio {
       width: 236px;
       & input {
-        margin: 3px 0 0;
+        cursor: pointer;
+        margin: 3px 6px 0 0;
       }
       & label {
+        margin-top: 2px;
         margin-right: 19px;
+        cursor: pointer;
+      }
+      & div {
+        display: flex;
+        align-items: center;
       }
     }
     &-radio__title {
@@ -135,6 +147,11 @@
     }
     &-link {
       color: $bg-color;
+      &:hover {
+        transition: all .3s;
+        color: $hover-color;
+        font-weight: 700;
+      }
     }
     &-submit {
       font-family: $fontSecondary;
@@ -148,7 +165,29 @@
       cursor: pointer;
       &:hover {
         transition: background-color .3s;
-        background-color: #2a32bb;
+        background-color: $hover-color;
+      }
+    }
+    &-date {
+      display: flex;
+      justify-content: space-between;
+      & select {
+        border: none;
+        border-bottom: 0.7px solid #f2f2f2;
+      }
+      &__day {
+        width: 56px;
+        margin-right: 9.8px;
+        padding-bottom: 5.6px;
+      }
+      &__month {
+        width: 91px;
+        margin-right: 9.8px;
+        padding-bottom: 5.6px;
+      }
+      &__year {
+        width: 68px;
+        padding-bottom: 6px;
       }
     }
   }
